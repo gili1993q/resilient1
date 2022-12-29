@@ -1,0 +1,14 @@
+include README.md
+include Dockerfile
+include apikey_permissions.txt
+include entrypoint.sh
+recursive-include gili_calculator/util *
+include gili_calculator/LICENSE
+include doc/*.md
+include doc/screenshots/*
+include icons/*.png
+recursive-include payload_samples/*/ *.json
+include tox.ini
+recursive-include tests/ *
+
+global-exclude *.bak
